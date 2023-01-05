@@ -356,6 +356,7 @@ if (!props.activeColor || !container) return <div>;
         </div>
       </div>
     </div>
+    </div>
   );
 });
 
