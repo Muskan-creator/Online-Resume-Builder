@@ -297,9 +297,9 @@ const Resume = forwardRef((props, ref) => {
     swapSourceTarget(source, target)
     
   }, [source]);
-
+const container = containerRef.current;
   useEffect(() => {
-    const container = containerRef.current;
+    
     if (!props.activeColor || !container) return;
 
     container.style.setProperty("--color", props.activeColor);
