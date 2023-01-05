@@ -303,7 +303,7 @@ if (!props.activeColor || !container) return;
     
     
 
-    container.style.setProperty("--color", props.activeColor);
+    container.style.setProperty("--color", props.activeColor)
   }, [props.activeColor]);
 
   return (
