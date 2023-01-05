@@ -298,7 +298,7 @@ const Resume = forwardRef((props, ref) => {
     
   }, [source]);
 const container = containerRef.current;
-if (!props.activeColor || !container) return;
+if (!props.activeColor || !container) return <div>;
   useEffect(() => {
     
     
