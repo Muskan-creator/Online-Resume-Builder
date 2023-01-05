@@ -343,6 +343,7 @@ if (!props.activeColor || !container) return;
               <span />
             )}
           </div>
+          </div>
         
 
         <div className={styles.main}>
