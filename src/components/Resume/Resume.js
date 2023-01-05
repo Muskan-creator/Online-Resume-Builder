@@ -294,7 +294,7 @@ const Resume = forwardRef((props, ref) => {
   }, []);
 
   useEffect(() => {
-    swapSourceTarget(source, target);
+    swapSourceTarget(source, target)
     <em>
   }, [source]);
 
