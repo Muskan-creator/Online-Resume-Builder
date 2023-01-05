@@ -298,9 +298,10 @@ const Resume = forwardRef((props, ref) => {
     
   }, [source]);
 const container = containerRef.current;
+if (!props.activeColor || !container) return;
   useEffect(() => {
     
-    if (!props.activeColor || !container) return;
+    
 
     container.style.setProperty("--color", props.activeColor);
   }, [props.activeColor]);
