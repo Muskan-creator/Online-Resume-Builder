@@ -296,7 +296,7 @@ const Resume = forwardRef((props, ref) => {
   useEffect(() => {
     swapSourceTarget(source, target);
     <em>
-  }, [source,target]);
+  }, [source]);
 
   useEffect(() => {
     const container = containerRef.current;
