@@ -290,17 +290,20 @@ const Resume = forwardRef((props, ref) => {
       [sections.project, sections.education, sections.summary],
       [sections.workExp, sections.achievement, sections.other],
     ]);
+    <em>
   }, []);
 
   useEffect(() => {
-    swapSourceTarget(source, target);
+    swapSourceTarget(source, target)
+    
   }, [source]);
-
+const container = containerRef.current;
+if (!props.activeColor || !container) return <div>;
   useEffect(() => {
-    const container = containerRef.current;
-    if (!props.activeColor || !container) return;
+    
+    
 
-    container.style.setProperty("--color", props.activeColor);
+    container.style.setProperty("--color", props.activeColor)
   }, [props.activeColor]);
 
   return (
@@ -340,7 +343,8 @@ const Resume = forwardRef((props, ref) => {
               <span />
             )}
           </div>
-        </div>
+          </div>
+        
 
         <div className={styles.main}>
           <div className={styles.col1}>
@@ -351,6 +355,7 @@ const Resume = forwardRef((props, ref) => {
           </div>
         </div>
       </div>
+    </div>
     </div>
   );
 });
